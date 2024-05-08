@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/pcbackgroun2"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:background="@color/PrimaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:fontFamily="@font/arvobold"
+        android:text="Rental PS RISQI Ramadan"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arvobold"
+            android:textSize="18dp"
+            android:text="Tipe PS" />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbtnps5"
+                android:text="PS5"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/popsb"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <RadioButton
+                android:id="@+id/rbtnps4"
+                android:text="PS4"
+                android:textSize="18dp"
+                android:fontFamily="@font/popsb"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <RadioButton
+                android:id="@+id/rbtnps3"
+                android:text="PS3"
+                android:textSize="18dp"
+                android:fontFamily="@font/popsb"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <RadioButton
+                android:id="@+id/rbtnpsvr"
+                android:text="PSVR"
+                android:textSize="18dp"
+                android:fontFamily="@font/popsb"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arvobold"
+            android:textSize="18dp"
+            android:text="Tambahan" />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbtnindomie"
+            android:text="Indomie"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/popsb"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:id="@+id/rbtnmieayam"
+            android:text="Mie Ayam"
+            android:textSize="18dp"
+            android:fontFamily="@font/popsb"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:id="@+id/rbtnsomay"
+            android:text="Somayy"
+            android:textSize="18dp"
+            android:fontFamily="@font/popsb"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arvobold"
+            android:textSize="18dp"
+            android:text="Waktu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="  Jam"
+                android:textColorHint="@color/Abu2"
+                android:fontFamily="@font/bakecil"
+                android:gravity="left|center"
+                android:background="@color/white"
+                android:id="@+id/etjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="50dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnProces"
+                android:text="PROSES"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arvobold"
+                android:backgroundTint="#C69774"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
